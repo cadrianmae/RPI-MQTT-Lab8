@@ -60,6 +60,7 @@ Update `PiPico/config.py` with your WiFi credentials and Raspberry Pi IP address
 Install the MQTT library on both Picos:
 ```python
 import mip
+mip.install("umqtt.simple")
 mip.install("umqtt.robust")
 ```
 
