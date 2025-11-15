@@ -88,3 +88,15 @@ mosquitto_sub -h localhost -t temp/pico
 # Publish a test message (Terminal 2)
 mosquitto_pub -h localhost -t temp/pico -m "26.5"
 ```
+
+## Wokwi Simulation
+
+Test the system in simulation before deploying to hardware:
+
+- **Publisher Simulation:** https://wokwi.com/projects/447640042287259649
+- **Subscriber Simulation:** https://wokwi.com/projects/447640075534461953
+
+To run simulations with network connectivity, start the Wokwi gateway first:
+```bash
+wokwigw
+```
